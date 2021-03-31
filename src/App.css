@@ -83,7 +83,7 @@
 .title{
   margin-top: 45px;
   color: floralwhite;
-  font-size: xxx-large;
+  font-size: 52px;
   font-family: Roboto;
   font-weight: normal;
 }
@@ -166,5 +166,37 @@ nav{
 
 .videoPlayer{
   width: 100%;
-  line-height: 1;
+}
+
+.member-picture{
+  height: 150px;
+  border-radius: 50% 20% / 10% 40%;
+}
+
+.member-card{
+  box-shadow: 3px  3px 3px 5px whitesmoke;
+  border-radius: 10px;
+  width: 400px;
+  height: 200px;
+  padding: 10px;
+  margin: 10px;
+  background-color: white;
+}
+
+.team-carrousel{
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-flow: row wrap;
+}
+
+.team{
+  background-color: floralwhite;
+}
+
+.title-team{
+  margin: 0;
+  padding: 25px;
+  font-family: Roboto;
+  font-size: 60px;
 }

@@ -9,6 +9,7 @@ import MainContent from "./components/MainContent";
 import Header from "./components/Header";
 import DownloadSection from "./components/DownloadSection.js";
 import VideoSection from "./components/VideoSection";
+import TeamSection from "./components/TeamSection";
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
       <Header />
       <VideoSection />
       <DownloadSection />
+      <TeamSection/>
     </div>
   );
 }

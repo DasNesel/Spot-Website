@@ -1,23 +1,22 @@
-import logo from './logo.svg';
+import logo from './img/logo.svg';
+import appStore from './img/appStore.svg';
+import googlePlay from './img/google-play-badge.svg';
+import pointer from './img/placeholder.svg';
 import './App.css';
+import { Link } from "react-scroll";
+import Navbar from "./components/Navbar";
+import MainContent from "./components/MainContent";
+import Header from "./components/Header";
+import DownloadSection from "./components/DownloadSection.js";
+import VideoSection from "./components/VideoSection";
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <Navbar />
+      <Header />
+      <VideoSection />
+      <DownloadSection />
     </div>
   );
 }

@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+@import "../node_modules/video-react/dist/video-react.css";  /*video player*/
+
 .App {
   text-align: center;
 }
@@ -5,16 +8,17 @@
 .App-logo {
   height: 40vmin;
   pointer-events: none;
+  fill: white;
 }
 
 @media (prefers-reduced-motion: no-preference) {
   .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+    animation: fr-translateX 2.5s linear;
   }
 }
 
 .App-header {
-  background-color: #282c34;
+  #background-color: #282c34;
   min-height: 100vh;
   display: flex;
   flex-direction: column;
@@ -22,17 +26,145 @@
   justify-content: center;
   font-size: calc(10px + 2vmin);
   color: white;
+  background: rgba(0, 0, 0, .65) url('./img/back.jpg');
+  background-size: cover;
+  background-blend-mode: darken;
 }
 
 .App-link {
   color: #61dafb;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+@keyframes fr-translateX {
+  0% {
+    transform: translateY(-200%);
   }
-  to {
-    transform: rotate(360deg);
+  25% {
+    transform: translateY(-150%);
   }
+  75%{
+    transform: translateY(10%);
+  }
+}
+
+.store{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  margin-left:33%;
+  margin-right:33%;
+}
+
+.appStoreIcon{
+  height: 150px;
+  width: 325px;
+  margin-right: 50px;
+}
+
+.googlePlayIcon{
+  height: 150px;
+  width: 375px;
+  margin-left: 50px;
+}
+
+.download{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: rgba(0, 0, 0, .2) url("./img/down.jpg");
+  background-blend-mode: darken;
+  min-height: calc(40vh - 55px);
+  background-size: cover;
+  background-attachment: fixed;
+  background-position: center;
+}
+
+.title{
+  margin-top: 45px;
+  color: floralwhite;
+  font-size: xxx-large;
+  font-family: Roboto;
+  font-weight: normal;
+}
+
+#downloadApp{
+  background: #FED777;
+  border: none;
+  height: 85px;
+  width: 200px;
+  border-radius: 5px;
+  font-size: 24px;
+}
+
+@media (max-width: 830px){
+  .appStoreIcon{
+    height: 300px;
+    width: 225px;
+    margin-right: 25px;
+  }
+
+  .googlePlayIcon{
+    height: 250px;
+    width: 275px;
+    margin-left: 25px;
+  }
+}
+
+@media (max-width: 600px){
+  .appStoreIcon{
+    height: 150px;
+    width: 125px;
+    margin-right: 25px;
+  }
+
+  .googlePlayIcon{
+    height: 200px;
+    width: 150px;
+    margin-left: 25px;
+  }
+}
+
+nav{
+  background-color: #FFFFFF;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  width: 100%;
+  left:0;
+}
+
+.nav{
+  display: inline;
+}
+
+.nav li{
+  display: inline;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.nav-logo{
+  height: 35px;
+  margin: 10px;
+  margin-left: 0;
+}
+
+.nav-content{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+}
+
+.video{
+  display: flex;
+  justify-content: center;
+}
+
+.videoPlayer{
+  width: 100%;
+  line-height: 1;
 }

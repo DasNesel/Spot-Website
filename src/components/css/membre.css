@@ -1,0 +1,27 @@
+.name-member{
+    margin: 0;
+    padding-top: 10px;
+}
+
+.memberFonction{
+    margin: 0;
+    padding: 15px;
+}
+
+.logo-git, .logo-linkedin{
+    padding: 5px;
+}
+
+.member-picture{
+    height: 150px;
+    border-radius: 25% 10%;
+}
+
+.member-card {
+    box-shadow: 3px 3px 3px 5px whitesmoke;
+    border-radius: 10px;
+    width: 300px;
+    padding: 10px;
+    margin: 20px;
+    background-color: white;
+}

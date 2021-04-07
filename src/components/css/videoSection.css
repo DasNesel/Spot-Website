@@ -1,0 +1,19 @@
+.video{
+    display: flex;
+    justify-content: flex-end;
+    background-color: #f4e5ce32;
+}
+
+.videoPlayer{
+    padding: 10px;
+    width: 50%;
+}
+
+.countainer-description{
+    padding: 10px 10% 10px 10%;
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}

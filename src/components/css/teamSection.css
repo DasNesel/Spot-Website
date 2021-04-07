@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
+
+.team-carrousel{
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding-bottom: 50px;
+    margin: 0 15% 0 15%;
+}
+
+.team{
+    background-color: #f4e5ce32;
+    min-height: calc(100vh - 55px);
+}
+
+.title-team{
+    margin: 0;
+    padding: 25px;
+    font-family: Roboto;
+    font-size: 60px;
+}

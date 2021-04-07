@@ -1,0 +1,59 @@
+.App-logo {
+    height: 40vmin;
+    pointer-events: none;
+    fill: white;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+    .App-logo {
+        animation: fr-translateX 2.5s linear;
+    }
+}
+
+.App-header {
+    min-height: 100vh;
+    font-size: calc(10px + 2vmin);
+    color: white;
+}
+
+.fond-video-header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fond-video-header video{
+    min-height: 100%;
+    min-width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+}
+
+.fond-video-header::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #00000085;
+    z-index: -8;
+}
+
+@keyframes fr-translateX {
+    0% {
+        transform: translateY(-200%);
+    }
+    25% {
+        transform: translateY(-150%);
+    }
+    75%{
+        transform: translateY(10%);
+    }
+}

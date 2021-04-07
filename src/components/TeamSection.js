@@ -1,11 +1,19 @@
 import React, {Component} from "react";
-import {BigPlayButton, Player} from "video-react";
-import membreTest from '../img/member-test.jpg';
+import Membre from "./Membre";
+import membres from "../configFiles/configMembres";
 
 
 export default class TeamSection extends Component {
 
     render() {
+        const elements = membres.map(membre => (<Membre
+            Name={membre.Name}
+            Poste={membre.Fonction}
+            Picture={membre.Profil}
+            urlLinkedIn={membre.urlLinkedin}
+            urlGitHub={membre.urlGitHub}
+        /> ));
+
         return (
             <section id="TeamSection">
                 <div className="team">
@@ -13,12 +21,7 @@ export default class TeamSection extends Component {
                         Notre équipe
                     </h2>
                     <div className="team-carrousel">
-                        <div className="member-card">
-                            <img src={membreTest} alt="member" className="member-picture"/>
-                            <h3 className="name">
-                                Matthieu
-                            </h3>
-                        </div>
+                        {elements}
                     </div>
                 </div>
             </section>

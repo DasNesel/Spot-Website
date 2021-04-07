@@ -1,50 +1,12 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap');
-@import "../node_modules/video-react/dist/video-react.css";  /*video player*/
+@import '../node_modules/video-react/dist/video-react.css';  /*video player*/
+@import "components/css/membre.css";
+@import "components/css/teamSection.css";
+@import "components/css/videoSection.css";
+@import "components/css/header.css";
 
 .App {
   text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-  fill: white;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: fr-translateX 2.5s linear;
-  }
-}
-
-.App-header {
-  #background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-  background: rgba(0, 0, 0, .65) url('./img/back.jpg');
-  background-size: cover;
-  background-blend-mode: darken;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes fr-translateX {
-  0% {
-    transform: translateY(-200%);
-  }
-  25% {
-    transform: translateY(-150%);
-  }
-  75%{
-    transform: translateY(10%);
-  }
 }
 
 .store{
@@ -157,46 +119,4 @@ nav{
   display: flex;
   flex-direction: row;
   justify-content: space-around;
-}
-
-.video{
-  display: flex;
-  justify-content: center;
-}
-
-.videoPlayer{
-  width: 100%;
-}
-
-.member-picture{
-  height: 150px;
-  border-radius: 50% 20% / 10% 40%;
-}
-
-.member-card{
-  box-shadow: 3px  3px 3px 5px whitesmoke;
-  border-radius: 10px;
-  width: 400px;
-  height: 200px;
-  padding: 10px;
-  margin: 10px;
-  background-color: white;
-}
-
-.team-carrousel{
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  flex-flow: row wrap;
-}
-
-.team{
-  background-color: floralwhite;
-}
-
-.title-team{
-  margin: 0;
-  padding: 25px;
-  font-family: Roboto;
-  font-size: 60px;
 }

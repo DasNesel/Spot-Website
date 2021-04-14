@@ -1,7 +1,7 @@
 import React, {Component} from "react";
 import { Player, BigPlayButton  } from 'video-react';
 import videoLink from "../configFiles/configContent";
-import style from "./css/videoSection.css";
+import "./css/videoSection.css";
 
 export default class VideoSection extends Component {
 

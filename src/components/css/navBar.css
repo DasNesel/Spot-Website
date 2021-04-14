@@ -1,0 +1,56 @@
+nav{
+    background-color: transparent;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    width: 100%;
+    left:0;
+    color: #FFFFFF;
+}
+
+.nav{
+    display: inline;
+}
+
+.nav li{
+    display: inline;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+
+.nav-logo{
+    height: 35px;
+    margin: 10px;
+    margin-left: 0;
+}
+
+.nav-content{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 0% 10% 0% 10%;
+}
+
+.visible{
+    background-color: #FFFFFF;
+    color: black;
+}
+
+.visible .logo-black{
+    display: inline;
+}
+
+.visible .logo-white{
+    display: none;
+}
+
+.logo-black{
+    display: none;
+}
+
+.nav-item .active{
+    border-bottom: black solid 0.5px;
+}

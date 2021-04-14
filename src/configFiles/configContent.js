@@ -20,19 +20,14 @@ export function randomUrlVideoHeader(){
     switch (randomNumber){
         case 0:
             return videoLake;
-            break;
         case 1:
             return videoCity;
-            break;
         case 2:
             return videoSkate;
-            break;
         case 3:
             return videoCity2;
-            break;
         case 4:
             return videoSea;
-            break;
         default:
             return videoLink.urlVideoHeader;
     }

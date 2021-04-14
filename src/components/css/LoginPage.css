@@ -1,0 +1,48 @@
+.fond-video-header{
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.fond-video-header video{
+    min-height: 100%;
+    min-width: 100%;
+    top: 50%;
+    left: 50%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    z-index: -10;
+}
+
+.fond-video-header::before{
+    position: absolute;
+    content: "";
+    height: 100%;
+    width: 100%;
+    background-color: #00000085;
+    z-index: -8;
+}
+
+.glass-card-container{
+    min-height: 30vh;
+    min-width: 10%;
+    background: #ffffff66;
+    box-shadow: 0 8px 32px 0 #000000cc;
+    backdrop-filter: blur( 5.0px );
+    -webkit-backdrop-filter: blur( 5.0px );
+    border-radius: 20px;
+    border: 1px solid #ffffff2e;
+    margin: 10%;
+}
+
+.glass-card-container, .loginform {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

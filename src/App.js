@@ -1,19 +1,21 @@
 import './App.css';
-import Navbar from "./components/Navbar";
-import Header from "./components/Header";
-import DownloadSection from "./components/DownloadSection.js";
-import VideoSection from "./components/VideoSection";
-import TeamSection from "./components/TeamSection";
+import React from "react";
+import {HashRouter, Route, Switch} from "react-router-dom";
+import Homepage from "./Pages/Homepage";
+import LoginPage from "./Pages/LoginPage";
+import RegisterPage from "./Pages/RegisterPage";
 
 function App() {
   return (
-    <div className="App">
-      <Navbar />
-      <Header />
-      <VideoSection />
-      <DownloadSection />
-      <TeamSection/>
-    </div>
+      <HashRouter>
+        <div className="container-fluid">
+          <Switch>
+            <Route exact path='/' component={Homepage}/>
+            <Route exact path='/Login' component={LoginPage}/>
+            <Route exact path='/Register' component={RegisterPage}/>
+          </Switch>
+        </div>
+      </HashRouter>
   );
 }
 

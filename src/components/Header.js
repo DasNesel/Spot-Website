@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import pointer from "../img/placeholder.svg";
 import {Link} from "react-scroll";
 import {inspiranteSentence, randomUrlVideoHeader} from "../configFiles/configContent";
-import videoLink from "../configFiles/configContent";
+import "./css/header.css";
 
 export default class Header extends Component {
 

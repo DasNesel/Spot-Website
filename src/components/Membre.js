@@ -2,7 +2,7 @@ import React, {Component} from "react";
 import logoLinkedIn from "../img/logo_linkedin.svg";
 import logoGitHub from "../img/logo_git.svg";
 import defaultPicture from "../img/membre/unknow.jpg";
-import style from "../components/css/membre.css";
+import "./css/membre.css";
 
 export default class Membre extends Component {
 

@@ -8,21 +8,28 @@ export function LoginForm(){
     const[error, setError] = useState("");
 
     const connect = () => {
-        setError("Error");
-        fetch("",{
+        const myInit ={
             method:"POST",
-            headers: {'Content-Type':'application/json'},
-            body:{
+            headers: {
+                'Accept': 'application/json',
+                'Content-Type': 'application/json',
+            },
+            body:JSON.stringify({
                 "username": username,
                 "password": password
-            }
-        }).then(
+            })
+        };
+
+        fetch("http://localhost:8080/auth/login",myInit).then(
             (reponse) => reponse.json()).then(
             (data) => {
+                console.log(data)
                 if(data.success === 1){
                     localStorage.setItem('tokenAuth', data.token);
+                    setError("Correct");
+                    console.log(localStorage.getItem('tokenAuth'))
                 }else{
-                    setError(data.error);
+                    setError(data.message);
                 }
             }
         )

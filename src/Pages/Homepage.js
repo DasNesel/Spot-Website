@@ -1,13 +1,12 @@
-import React, {Component} from "react";
-import Navbar from "../components/Navbar";
-import Header from "../components/Header";
-import VideoSection from "../components/VideoSection";
-import DownloadSection from "../components/DownloadSection";
-import TeamSection from "../components/TeamSection";
+import React from "react";
+import {Navbar} from "../components/Navbar";
+import {Header} from "../components/Header";
+import {VideoSection} from "../components/VideoSection";
+import {DownloadSection} from "../components/DownloadSection";
+import {TeamSection} from "../components/TeamSection";
 
-export default class Homepage extends Component {
+export function Homepage () {
 
-    render() {
         return (
             <div className="Homepage" >
                 <Navbar />
@@ -17,5 +16,4 @@ export default class Homepage extends Component {
                 <TeamSection/>
             </div>
         );
-    }
 }

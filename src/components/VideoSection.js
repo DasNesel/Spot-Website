@@ -3,9 +3,8 @@ import { Player, BigPlayButton  } from 'video-react';
 import videoLink from "../configFiles/configContent";
 import "./css/videoSection.css";
 
-export default class VideoSection extends Component {
+export function VideoSection () {
 
-    render() {
         return (
             <section id="videoSection">
                 <div className="video">
@@ -24,5 +23,4 @@ export default class VideoSection extends Component {
                 </div>
             </section>
         );
-    }
 }

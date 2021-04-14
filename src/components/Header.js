@@ -1,12 +1,11 @@
-import React, {Component} from "react";
+import React from "react";
 import pointer from "../img/placeholder.svg";
 import {Link} from "react-scroll";
 import {inspiranteSentence, randomUrlVideoHeader} from "../configFiles/configContent";
 import "./css/header.css";
 
-export default class Header extends Component {
+export function Header (){
 
-    render() {
         return (
                 <header className="App-header">
                     <div className="fond-video-header">
@@ -30,5 +29,4 @@ export default class Header extends Component {
                     </div>
                 </header>
         );
-    }
 }

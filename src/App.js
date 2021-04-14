@@ -1,8 +1,8 @@
 import './App.css';
 import React from "react";
 import {HashRouter, Route, Switch} from "react-router-dom";
-import Homepage from "./Pages/Homepage";
-import LoginPage from "./Pages/LoginPage";
+import {Homepage} from "./Pages/Homepage";
+import {LoginPage} from "./Pages/LoginPage";
 import RegisterPage from "./Pages/RegisterPage";
 
 function App() {

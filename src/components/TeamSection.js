@@ -1,11 +1,10 @@
-import React, {Component} from "react";
-import Membre from "./Membre";
+import React from "react";
+import {Membre} from "./Membre";
 import membres from "../configFiles/configMembres";
 
 
-export default class TeamSection extends Component {
+export function TeamSection () {
 
-    render() {
         const elements = membres.map(membre => (<Membre
             Name={membre.Name}
             Poste={membre.Fonction}
@@ -26,5 +25,4 @@ export default class TeamSection extends Component {
                 </div>
             </section>
         );
-    }
 }

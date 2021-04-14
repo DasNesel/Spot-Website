@@ -3,14 +3,7 @@ import {randomUrlVideoHeader} from "../configFiles/configContent";
 import "../components/css/LoginPage.css";
 import {LoginForm} from "../components/LoginForm";
 
-
-
-
-
-
-export default function LoginPage (){
-
-
+export function LoginPage (){
         return (
             <div className="LoginPage" >
                 <div className="fond-video-header">

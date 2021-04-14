@@ -1,56 +1,42 @@
-import React, { Component } from "react";
+import React, { useState } from "react";
 import pointerBlack from '../img/placeholder_black.svg';
 import pointerWhite from  '../img/placeholder.svg'
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./css/navBar.css";
 
-export default class Navbar extends Component {
+export function Navbar () {
 
-    scrollToTop = () => {
+    const scrollToTop = () => {
         scroll.scrollToTop();
     };
 
-    constructor(props) {
-        super(props);
-        this.state = {visible: false};
-    }
+    const[visible, setVisible] = useState(false);
 
-    componentDidMount() {
-        window.addEventListener('scroll', this.changebackground)
-    }
-
-    componentWillUnmount() {
-        window.addEventListener('scroll', this.changebackground)
-    }
-
-    changebackground = () => {
+    const changebackground = () => {
         if(window.scrollY >= 280){
-            this.setState({
-                visible:true
-            });
+            setVisible(true);
         }else{
-            this.setState({
-                visible:false
-            });
+            setVisible(false);
         }
     };
 
-    render() {
+    window.addEventListener('scroll', changebackground);
+
         return (
             <nav className="nav" id="navbar">
-                <div className={this.state.visible ? "visible" : " "}>
+                <div className={visible ? "visible" : " "}>
                     <div className="nav-content">
                         <img
                             src={pointerBlack}
                             className="nav-logo logo-black"
                             alt="Logo."
-                            onClick={this.scrollToTop}
+                            onClick={scrollToTop}
                         />
                         <img
                             src={pointerWhite}
                             className="nav-logo logo-white"
                             alt="Logo."
-                            onClick={this.scrollToTop}
+                            onClick={scrollToTop}
 
                         />
                         <ul className="nav-items">
@@ -95,5 +81,4 @@ export default class Navbar extends Component {
                 </div>
             </nav>
         );
-    }
 }

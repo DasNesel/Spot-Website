@@ -4,9 +4,8 @@ import googlePlay from "../img/google-play-badge.svg";
 import illustration from "../img/svg-tracking.svg";
 import "./css/downloadSection.css";
 
-export default class DownloadSection extends Component {
+export function DownloadSection () {
 
-    render() {
         return (
                 <section id="downloadSection">
                     <div className="download">
@@ -29,5 +28,4 @@ export default class DownloadSection extends Component {
                     </div>
                 </section>
         );
-    }
 }

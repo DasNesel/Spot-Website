@@ -8,6 +8,7 @@ export function LoginForm(){
     const[error, setError] = useState("");
 
     const connect = () => {
+        setError("Error");
         fetch("",{
             method:"POST",
             headers: {'Content-Type':'application/json'},

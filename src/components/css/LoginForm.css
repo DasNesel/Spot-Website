@@ -16,7 +16,7 @@
     margin: 20px 0 0 0;
 
 }
-
+/*
 input{
     width: 75%;
     background-color: #FFFFFF00;
@@ -27,7 +27,7 @@ input{
     margin: 7px 0 5px 0;
     position: relative;
 }
-
+*/
 input::placeholder{
     color: #FFFFFF60;
 }
@@ -50,7 +50,7 @@ input:focus{
     margin: 0;
     font-size: 16px;
 }
-
+/*
 button{
     border-radius: 20px;
     border: none;
@@ -62,3 +62,5 @@ button{
     font-weight: 800;
     font-size: 16px;
 }
+
+ */

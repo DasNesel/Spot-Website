@@ -12,7 +12,7 @@ const videoLink = {
 //mettre dans le return une phrase inspirante présente sur le header contenu dans une balise p. Il est possible de
 //mettre des balises de personnalisation
 export function inspiranteSentence(){
-    return "Mettre une phrase inspirante ! Partage tes meilleurs SPOTs";
+    return "Partage tes meilleurs SPOTs";
 }
 
 export function randomUrlVideoHeader(){

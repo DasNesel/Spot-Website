@@ -3,8 +3,12 @@ import pointerBlack from '../img/placeholder_black.svg';
 import pointerWhite from  '../img/placeholder.svg'
 import { Link, animateScroll as scroll } from "react-scroll";
 import "./css/navBar.css";
+import {useHistory} from "react-router-dom";
 
 export function Navbar () {
+
+    const history = useHistory();
+    const handleClick = () => history.push('/LoginClement');
 
     const scrollToTop = () => {
         scroll.scrollToTop();
@@ -75,6 +79,11 @@ export function Navbar () {
                                 >
                                     L'Équipe
                                 </Link>
+                            </li>
+                            <li className="nav-item">
+                                <button className="LoginButton" onClick={handleClick}>
+                                    Login
+                                </button>
                             </li>
                         </ul>
                     </div>
